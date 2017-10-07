@@ -1,4 +1,4 @@
 create database wordpress;
-grant all privileges on wordpress.* to "wordpress"@localhost identified by "wppass";
+grant all privileges on wordpress.* to "wordpress"@localhost identified by "LOCAL_PASSWORD";
 flush privileges;
 quit
