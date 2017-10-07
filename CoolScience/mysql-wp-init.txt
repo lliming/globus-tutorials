@@ -1,0 +1,6 @@
+use mysql;
+update user set password=PASSWORD("LOCAL_PASSWORD") where User='root';
+create database wordpress;
+grant all privileges on wordpress.* to "wordpress"@localhost identified by "wppass";
+flush privileges;
+quit
